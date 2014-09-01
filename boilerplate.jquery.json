@@ -1,0 +1,25 @@
+{
+	"name": "boilerplate",
+	"title": "Boilerplate",
+	"description": "",
+	"keywords": ["", "", ""],
+
+	"version": "0.1.0",
+	"author": {
+		"name": "Jared Cubilla",
+		"url": "https://github.com/JaredCubilla"
+	},
+
+	"licenses": [
+		{
+			"type": "MIT",
+			"url": "http://www.opensource.org/licenses/mit-license.php"
+		}
+	],
+
+	"homepage": "https://github.com/JaredCubilla/my-jquery-plugin-boilerplate",
+	"bugs": "https://github.com/JaredCubilla/my-jquery-plugin-boilerplate/issues",
+	"dependencies": {
+		"jquery": ">=1.1"
+	}
+}
