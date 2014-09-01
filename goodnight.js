@@ -13,12 +13,6 @@
 			}
 		};
 
-		Goodnight.js = function(callback) {
-			if (hours > 17 || hours < 6) {
-				callback();
-			}
-		};
-
 		return Goodnight;
 	}
 
