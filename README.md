@@ -1,67 +1,29 @@
-# Ipsum Everything
+# Goodnight
 
-The ultimate jQuery plugin for all things ipsum.
+A super small Javascript plugin (292B) for applying styles and executing Javascript specifically when it's nighttime (> 6PM and < 6AM).
 
 ## Usage
 
-Ipsum Everything is an awesome plugin developed for choosing and using the perfect placeholder text for your next project(s).
-
-To use it, plop a copy of the minified script into your HTML...
+First, download the `goodnight.min.js` file. Reference it in your HTML like so...
 
 ```
-<script src= "vendor/ipsum-everything.min.js"></script>
+<script src= "scripts/goodnight.min.js"></script>
 ```
 
-You can start using it like so...
+**Note:** If you leave this script at the bottom of the `<body>`, there will be a flash of daytime styles during nighttime, due to the browser processing the document until the script. It's best if you include this in the `<head>`.
+
+`Goodnight.css()` adds a custom styles for you when it's nighttime. Use it like so:
 
 ```
-$("#demo").ipsum();
+Goodnight.css();
 ```
 
-## Options
-
-Ipsum Everything currently supports [Hipster Ipsum](http://hipsum.co/), [Bacon Ipsum](http://baconipsum.com/), [Skate Ipsum](http://skateipsum.com/), [Baseball Ipsum](http://baseballipsum.apphb.com/), [Pony Ipsum](http://ponyipsum.com/) and [Science Ipsum](http://scienceipsum.com/).
-
-Some ipsums also have sub-options. Hipster Ipsum has a "hipster-centric" option, Bacon Ipsum has a "bacon-all-meat" option, and Pony Ipsum has a "all-pony" option.
-
-You can also specify the number of paragraphs used. Note that an excessive amount of generated paragraphs will probably slow your site down.
-
-To use these options, use them like any other jQuery plugin...
+This searches for a `dark.css` file, and if not found, looks for a `styles/dark.css`. You can specify your own file path like so:
 
 ```
-$("#demo").ipsum({
-    paras: 2,
-    type: "skate"
-})
+Goodnight.css('path/to/style.css');
 ```
-
-The above example would generate 2 paragraphs using Skate Ipsum.
-
-Here's another example, which generates 5 paragraphs of all-meat Bacon Ipsum.
-
-```
-$("#demo").ipsum({
-    paras: 5,
-    type: "bacon-all-meat"
-})
-```
-
-The following is a list of all possible values in the `type` option:
-
-* hipster-latin (Hipster Ipsum)
-* hipster-centric (Hipster Ipsum)
-* bacon (Bacon Ipsum)
-* bacon-all-meat (Bacon Ipsum)
-* skate (Skate Ipsum)
-* baseball (Baseball Ipsum)
-* pony (Pony Ipsum)
-* all-pony (Pony Ipsum)
-* science (Science Ipsum)
-
-## Contributing
-
-Feel free to send suggestions, bug reports, etc. via the built in Github Issue Tracker. If you're feeling generous go ahead and send me a pull request for bug fixes, other ipsums, and other stuff.
 
 ## License
 
-Licensed under MIT.
+Licensed under MIT. Created by Jared Cubilla.
