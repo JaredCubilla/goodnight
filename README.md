@@ -18,7 +18,7 @@ First, download the `goodnight.min.js` file. Reference it in your HTML like so..
 Goodnight.css();
 ```
 
-This searches for a `dark.css` file, and if not found, looks for a `styles/dark.css`. You can specify your own file path like so:
+This searches for a `dark.css` file in the same directory as the Goodnight script. You can specify your own file path like so:
 
 ```
 Goodnight.css('path/to/style.css');
