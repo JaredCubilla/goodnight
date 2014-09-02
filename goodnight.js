@@ -11,7 +11,7 @@
 			if (hours >= Goodnight.from || hours < Goodnight.to) {
 				var dark = document.createElement("link");
 				dark.rel = "stylesheet";
-				dark.href = path || "dark.css" || "styles/dark.css";
+				dark.href = path || "dark.css";
 				document.getElementsByTagName("head")[0].appendChild(dark);
 			}
 		};
