@@ -15,7 +15,7 @@ module.exports = function(grunt) {
 		},
 		
 		watch: {
-		    files: ["goodnight.js", "demo/index.html"],
+			files: ["goodnight.js", "demo/index.html"],
 			tasks: ["jshint", "uglify"]
 		}
 
