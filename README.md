@@ -1,6 +1,6 @@
 # Goodnight
 
-A super small Javascript plugin (292B) for applying styles and executing Javascript specifically when it's nighttime (> 6PM and < 6AM).
+A super small Javascript plugin (292B) for applying styles at night (> 6PM and < 6AM).
 
 ## Usage
 
