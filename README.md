@@ -26,4 +26,4 @@ Goodnight.css('path/to/style.css');
 
 ## License
 
-Licensed under MIT. Created by Jared Cubilla.
+Licensed under MIT. Created by [Jared Cubilla](https://github.com/JaredCubilla).
