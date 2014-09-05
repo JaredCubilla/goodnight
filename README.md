@@ -1,6 +1,6 @@
 # Goodnight
 
-A super small Javascript plugin for applying special styles at night.
+A super small Javascript plugin for applying special CSS styles at night.
 
 ## Usage
 
@@ -41,6 +41,10 @@ bower install goodnight
 ```
 
 ... and Goodnight should be installed as a bower package.
+
+## Contributing
+
+If something's wrong or needs changing, feel free to leave issues at Github's issue tracker. If you're feeling generous, please send pull requests for fixing bugs or adding cool new stuff.
 
 ## License
 
