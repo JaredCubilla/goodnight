@@ -16,17 +16,17 @@ First, download the `goodnight.min.js` file. Reference it in your HTML like so..
 Goodnight.css();
 ```
 
-This searches for a `dark.css` file in the same directory as the Goodnight script. You can specify your own file path like so:
+This searches for a `styles/dark.css` file in the same directory as the Goodnight script. You can specify your own file path like so:
 
 ```
 Goodnight.css('path/to/style.css');
 ```
 
-You can also specify the hours of which the dark styles are used. By default, your Dark CSS file is activated from 6PM to 6AM, but you can specify the exact hours using the `Goodnight.from` and `Goodnight.to` settings.
+You can also specify the hours of which the dark styles are used. By default, your dark CSS file is activated from 6PM to midnight and midnight to 6AM, but you can specify the exact hours using the `Goodnight.AM` and `Goodnight.PM` variables.
 
 ```
-Goodnight.from = 20 // (8PM)
-Goodnight.to = 5 // (5AM)
+Goodnight.AM = 5 // (5AM)
+Goodnight.PM = 20 // (8PM)
 Goodnight.css('path/to/style.css') // this now activates dark styles before 5AM and after 8PM
 ```
 
