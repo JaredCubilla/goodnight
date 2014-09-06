@@ -2,6 +2,8 @@
 
 A super small Javascript plugin for applying special CSS styles at night.
 
+Demo: https://jaredcubilla.github.io/goodnight/demo/
+
 ## Usage
 
 First, download the `goodnight.min.js` file. Reference it in your HTML like so...
