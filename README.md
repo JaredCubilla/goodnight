@@ -2,6 +2,8 @@
 
 A super small Javascript plugin (292B) for applying styles and executing Javascript specifically when it's nighttime (> 6PM and < 6AM).
 
+Demo: https://jaredcubilla.github.io/goodnight/demo/
+
 ## Usage
 
 First, download the `goodnight.min.js` file. Reference it in your HTML like so...
