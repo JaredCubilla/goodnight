@@ -3,12 +3,15 @@
 	function goodnight() {
 		var Goodnight = {};
 		var hours = new Date().getHours();
+
+		Goodnight.AM = 18; // 6PM
+		Goodnight.PM = 6;    // 6AM
+
 		Goodnight.css = function(path) {
-			if (hours > 17 || hours < 6) {
+			if (hours >= Goodnight.PM || hours < Goodnight.AM) {
 				var dark = document.createElement("link");
 				dark.rel = "stylesheet";
-				dark.href = path || "dark.css" || "styles/dark.css";
-
+				dark.href = path || "styles/dark.css";
 				document.getElementsByTagName("head")[0].appendChild(dark);
 			}
 		};
