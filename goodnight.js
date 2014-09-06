@@ -4,8 +4,8 @@
 		var Goodnight = {};
 		var hours = new Date().getHours();
 
-		Goodnight.AM = 18; // 6PM
-		Goodnight.PM = 6;    // 6AM
+		Goodnight.AM = 6; // 6AM
+		Goodnight.PM = 18; // 6PM
 
 		Goodnight.css = function(path) {
 			if (hours >= Goodnight.PM || hours < Goodnight.AM) {
