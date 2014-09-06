@@ -44,6 +44,12 @@ bower install goodnight
 
 ... and Goodnight should be installed as a bower package.
 
+If you're too lazy to download it, you could always just do this:
+
+```
+<script src= "https://jaredcubilla.github.io/goodnight/goodnight.min.js"></script>
+```
+
 ## Contributing
 
 If something's wrong or needs changing, feel free to leave issues at Github's issue tracker. If you're feeling generous, please send pull requests for fixing bugs or adding cool new stuff.
