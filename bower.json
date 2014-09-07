@@ -7,12 +7,14 @@
 	"main": "goodnight.js",
 	"ignore": [
 		".jshintrc",
-		"Gruntfile.js"
+		"Gruntfile.js",
+		"README.md",
+		"demo/"
 	],
 
 	"repository": {
 		"type": "git",
-		"url": "git://github.com/JaredCubilla/ipsum-everything.git"
+		"url": "git://github.com/JaredCubilla/goodnight.git"
 	},
 
 	"license": "MIT"
