@@ -24,9 +24,7 @@
 		};
 
 		Goodnight.toggle = function () {
-			var i;
-			
-			for (i = 0; i < ln.length; i++) {
+			for (var i = 0; i < ln.length; i++) {
 				if (ln[i].parentNode) {
 					ln[i].parentNode.removeChild(ln[i]);
 				} else {
