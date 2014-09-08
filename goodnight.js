@@ -1,23 +1,42 @@
-(function(window){
+(function (g, ns) {
 	"use strict";
-	function goodnight() {
-		var Goodnight = {};
-		var hours = new Date().getHours();
 
-		Goodnight.AM = 6; // 6AM
-		Goodnight.PM = 18; // 6PM
+	function gn() {
+		var Goodnight = { AM: 6, PM: 18 }, hours = new Date().getHours(), ln = [];
 
-		Goodnight.css = function(path) {
-			if (hours >= Goodnight.PM || hours < Goodnight.AM) {
-				var dark = document.createElement("link");
-				dark.rel = "stylesheet";
-				dark.href = path || "styles/dark.css";
-				document.getElementsByTagName("head")[0].appendChild(dark);
+		Goodnight.night = function () {
+			return hours < this.PM ? hours < this.AM ? true : false : true;
+		};
+
+		Goodnight.css = function (path) {
+			if (!path) {
+				return;
+			}
+
+			var item  = document.createElement("link");
+			item.rel = "stylesheet";
+			item.href = path;
+			ln.push(item);
+
+			if (this.night()) {
+				document.head.appendChild(item);
+			}
+		};
+
+		Goodnight.toggle = function () {
+			var i;
+			
+			for (i = 0; i < ln.length; i++) {
+				if (ln[i].parentNode) {
+					ln[i].parentNode.removeChild(ln[i]);
+				} else {
+					document.head.appendChild(ln[i]);
+				}
 			}
 		};
 
 		return Goodnight;
 	}
 
-	window.Goodnight = goodnight();
-}(window));
+	g[ns] = gn();
+})(window, "Goodnight");
