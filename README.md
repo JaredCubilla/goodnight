@@ -6,30 +6,38 @@ Demo: https://jaredcubilla.github.io/goodnight/demo/
 
 ## Usage
 
-First, download the `goodnight.min.js` file. Reference it in your HTML like so...
+Download the `goodnight.min.js` file. Include it in your HTML
 
 ```
 <script src= "scripts/goodnight.min.js"></script>
 ```
 
-`Goodnight.css()` adds a custom styles for you when it's nighttime. Use it like so:
+`Goodnight.css(path)` adds a custom styles for you when it's nighttime.
 
-```
-Goodnight.css();
-```
-
-This searches for a `styles/dark.css` file in the same directory as the Goodnight script. You can specify your own file path like so:
+You can add as many styles as you want, and the files will be added if it's nighttime.
 
 ```
 Goodnight.css('path/to/style.css');
+Goodnight.css('path/to/another.css');
+Goodnight.css('path/to/night.css');
 ```
 
-You can also specify the hours of which the dark styles are used. By default, your dark CSS file is activated from 6PM to midnight and midnight to 6AM, but you can specify the exact hours using the `Goodnight.AM` and `Goodnight.PM` variables.
+You can also specify the hours of which the dark styles are used. By default, your dark CSS file is activated from 6PM to midnight and midnight to 6AM, but you can specify the exact hours using the `Goodnight.AM` and `Goodnight.PM` variables. You should set the hours before adding any styles.
 
 ```
 Goodnight.AM = 5 // (5AM)
 Goodnight.PM = 20 // (8PM)
 Goodnight.css('path/to/style.css') // this now activates dark styles before 5AM and after 8PM
+```
+
+If you want to provide easy way to revert back to light styles, you can call `Goodnight.toggle()`. For example you might create button for turning on and off these styles and call `Goodnight.toggle()` inside the event handler.
+
+```
+Goodnight.css('path/to/style.css');
+
+document.querySelector('#some-button').addEventListener('click', function () {
+  Goodnight.toggle(); // This removes styles from document.head
+}, false);
 ```
 
 ## Tips
