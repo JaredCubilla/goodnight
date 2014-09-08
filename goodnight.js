@@ -19,7 +19,7 @@
 			ln.push(item);
 
 			if (this.night()) {
-				document.head.appendChild(item);
+				document.documentElement.firstChild.appendChild(item);
 			}
 		};
 
@@ -28,7 +28,7 @@
 				if (ln[i].parentNode) {
 					ln[i].parentNode.removeChild(ln[i]);
 				} else {
-					document.head.appendChild(ln[i]);
+					document.documentElement.firstChild.appendChild(ln[i]);
 				}
 			}
 		};
