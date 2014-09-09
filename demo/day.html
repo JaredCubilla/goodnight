@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset= "utf-8">
+		<title>Goodnight Demo - Day</title>
+		<link rel= "stylesheet" href= "styles/main.css">
+		<script src= "../goodnight.js"></script>
+		<script>
+		Goodnight.AM = 18;
+		Goodnight.PM = 6;
+		Goodnight.css('styles/dark.css');
+
+		window.addEventListener('DOMContentLoaded', function () {
+			window.addEventListener('click', function () {
+				Goodnight.toggle();
+			}, false);
+		}, false);
+		</script>
+	</head>
+	<body>
+		<div id="demo">
+			<p>Night theme should show between 06:00 -> 18:00.</p>
+			<p>Click anywhere to toggle styles</div>
+	</body>
+</html>
