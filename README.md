@@ -2,7 +2,8 @@
 
 A super small Javascript plugin for applying special CSS styles at night.
 
-Demo: https://jaredcubilla.github.io/goodnight/demo/
+Demo (night): https://jaredcubilla.github.io/goodnight/demo/
+Demo (day): https://jaredcubilla.github.io/goodnight/demo/day.html
 
 ## Usage
 
