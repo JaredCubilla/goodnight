@@ -41,6 +41,12 @@ document.querySelector('#some-button').addEventListener('click', function () {
 }, false);
 ```
 
+You can also append a specific class to the body at night. Simply use `Goodnight.class()` (`goodnight` is given if not specified).
+
+```js
+Goodnight.class('my-night-class');
+```
+
 ## Tips
 
 If you leave this script at the bottom of the `<body>`, there will be a flash of daytime styles during nighttime, due to the browser processing the document until the script. It's best if you include the script in the `<head>`.
