@@ -13,7 +13,7 @@
 				return;
 			}
 
-			var item  = document.createElement("link");
+			var item = document.createElement("link");
 			item.rel = "stylesheet";
 			item.href = path;
 			ln.push(item);
@@ -22,13 +22,13 @@
 				document.documentElement.firstChild.appendChild(item);
 			}
 		};
-		
+
 		Goodnight.class = function (cssClass) {
 			if (this.night()) {
 				document.body.className += " " + (cssClass || "goodnight");
 			}
 		};
-		
+
 		Goodnight.toggle = function () {
 			for (var i = 0; i < ln.length; i++) {
 				if (ln[i].parentNode) {
