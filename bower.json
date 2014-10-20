@@ -1,6 +1,6 @@
 {
 	"name": "goodnight",
-	"version": "0.2.0",
+	"version": "0.2.2",
 	"description": "Apply CSS styles depending on date or time.",
 	"keywords": ["goodnight", "css", "styles", "plugin", "night", "date", "time"],
 
