@@ -13,13 +13,19 @@
 				return;
 			}
 
-			var item  = document.createElement("link");
+			var item = document.createElement("link");
 			item.rel = "stylesheet";
 			item.href = path;
 			ln.push(item);
 
 			if (this.night()) {
-				document.head.appendChild(item);
+				document.documentElement.firstChild.appendChild(item);
+			}
+		};
+
+		Goodnight.class = function (cssClass) {
+			if (this.night()) {
+				document.body.className += " " + (cssClass || "goodnight");
 			}
 		};
 
@@ -28,7 +34,7 @@
 				if (ln[i].parentNode) {
 					ln[i].parentNode.removeChild(ln[i]);
 				} else {
-					document.head.appendChild(ln[i]);
+					document.documentElement.firstChild.appendChild(ln[i]);
 				}
 			}
 		};

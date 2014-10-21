@@ -2,7 +2,9 @@
 <html>
 	<head>
 		<meta charset= "utf-8">
-		<title>Goodnight Demo</title>
+		<title>Goodnight</title>
+		<link href='http://fonts.googleapis.com/css?family=Raleway:700|Open+Sans:300' rel='stylesheet' type='text/css'>
+		<link rel= "stylesheet" href="styles/font-awesome/css/fontello.css">
 		<link rel= "stylesheet" href= "styles/main.css">
 		<script src= "../goodnight.js"></script>
 		<script>
@@ -12,6 +14,29 @@
 		</script>
 	</head>
 	<body>
-		<div id= "demo"></div>
+		<div class= "header"><i class= "icon-moon"></i></div>
+		<h1>GOODNIGHT</h1>
+		<div class= "subtitle">A super small library for applying custom CSS styles at night.</div>
+
+		<h2>Installation</h2>
+		<p>The easiest way to install is by using <a href= "http://bower.io">bower</a>...</p>
+		<div class= "cb">$ bower install goodnight</div>
+		<p>... or you could download it and reference it in your HTML like so...</p>
+		<div class= "cb">&lt;script src="scripts/goodnight.min.js"&gt;&lt;/script&gt;</div>
+		<p>Remember to put and use Goodnight in the head of your document, to avoid a flash of unstyled content for the night version.</p>
+
+		<h2>Usage</h2>
+		<p>The following is the most basic example of using Goodnight with Javascript.</p>
+		<div class= "cb">Goodnight.css('styles/dark.css');</div>
+		<p>This makes Goodnight search for dark.css in the styles directory and apply that from 6PM to 6AM. To set your own Goodnight times, use the Goodnight.AM and Goodnight.PM properties:</p>
+		<div class= "cb">Goodnight.AM = 5; // 5AM<br>Goodnight.PM = 20; // 8PM</div>
+		<p>You can easily toggle light and dark styles using the Goodnight.toggle method:</p>
+		<div class= "cb">Goodnight.css('path/to/dark.css');<br>document.querySelector('#some-button').addEventListener('click', function () {<br>&nbsp;&nbsp;&nbsp;&nbsp;Goodnight.toggle(); // This removes styles from document.head<br>}, false);</div>
+		<p>Lastly, you can append a Goodnight appends the class 'goodnight' to your body when it is night time, but you can change the class name of this to anything you want like this:</p>
+		<div class= "cb">Goodnight.class('my-night-class');</div>
+
+		<h2>License</h2>
+		<p>Licensed under MIT. Created by <a href="https://www.github.com/JaredCubilla">Jared Cubilla</a>.</p>
+		<div class="end"></div>
 	</body>
 </html>

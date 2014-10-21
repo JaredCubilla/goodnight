@@ -1,3 +1,59 @@
 body {
 	background-color: #ecf0f1;
+	margin: 0;
+	padding: 0;
+	font-family: "Open Sans";
+	font-weight: 300;
+}
+
+.header, h1, h2 {
+	text-align: center;
+}
+
+.header {
+	padding-top: 5%;
+	font-size: 60px;
+}
+
+h1, h2 {
+	font-family: Raleway;
+	font-weight: 700;
+	margin:0;
+}
+
+h1 {
+	font-size: 50px;
+}
+
+.subtitle {
+	font-size: 15px;
+	text-align: center;
+	padding-left: 7px;
+	padding-right: 7px;
+}
+
+h2 {
+	margin-top: 50px;
+	margin-bottom: 20px;
+	font-size: 30px;
+}
+
+.cb {
+	background-color: #95a5a6;
+	padding: 15px;
+	font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+	font-size: 13px;
+}
+
+a {
+	color: inherit;
+}
+
+p {
+	padding: 15px;
+	padding-bottom: 5px;
+}
+
+.end {
+	margin-bottom: 50px;
 }
