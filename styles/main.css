@@ -1,7 +1,7 @@
 body {
 	background-color: #ecf0f1;
 	margin: 0;
-	padding: 0;
+	padding: 0 15rem;
 	font-family: "Open Sans";
 	font-weight: 300;
 }
@@ -40,7 +40,8 @@ h2 {
 
 .cb {
 	background-color: #95a5a6;
-	padding: 15px;
+	padding: 15px 16rem;
+	margin: 0 -15rem;
 	font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
 	font-size: 13px;
 }
@@ -56,4 +57,22 @@ p {
 
 .end {
 	margin-bottom: 50px;
+}
+
+body,
+.cb {
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+@media screen and (max-width: 70rem) {
+	body {
+		padding: 0 3rem;
+	}
+	.cb {
+		padding: 15px 5rem;
+		margin: 0 -4rem;
+	}
 }
