@@ -2,7 +2,7 @@ body {
 	background-color: #ecf0f1;
 	margin: 0;
 	padding: 0 15rem;
-	font-family: "Open Sans";
+	font-family: "Open Sans", sans-serif;
 	font-weight: 300;
 }
 
@@ -18,32 +18,32 @@ body {
 h1, h2 {
 	font-family: Raleway;
 	font-weight: 700;
-	margin:0;
+	margin: 0;
 }
 
 h1 {
-	font-size: 50px;
+	font-size: 3rem;
 }
 
 .subtitle {
-	font-size: 15px;
+	font-size: 1rem;
 	text-align: center;
-	padding-left: 7px;
-	padding-right: 7px;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
 }
 
 h2 {
-	margin-top: 50px;
-	margin-bottom: 20px;
-	font-size: 30px;
+	margin-top: 3rem;
+	margin-bottom: 1.25rem;
+	font-size: 2rem;
 }
 
 .cb {
 	background-color: #95a5a6;
-	padding: 15px 16rem;
+	padding: 1rem 16rem;
 	margin: 0 -15rem;
 	font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
-	font-size: 13px;
+	font-size: 0.9rem;
 }
 
 a {
@@ -51,12 +51,11 @@ a {
 }
 
 p {
-	padding: 15px;
-	padding-bottom: 5px;
+	padding: 1rem;
 }
 
 .end {
-	margin-bottom: 50px;
+	margin-bottom: 3rem;
 }
 
 body,
@@ -72,7 +71,17 @@ body,
 		padding: 0 3rem;
 	}
 	.cb {
-		padding: 15px 5rem;
-		margin: 0 -4rem;
+		padding: 1rem 4rem;
+		margin: 0 -3rem;
+	}
+}
+
+@media screen and (max-width: 45rem) {
+	body {
+		padding: 0;
+	}
+	.cb {
+		padding: 1rem;
+		margin: 0;
 	}
 }
