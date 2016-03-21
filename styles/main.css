@@ -58,15 +58,21 @@ p {
 	margin-bottom: 3rem;
 }
 
-body,
-.cb {
+body {
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	-o-transition: all 0.3s;
 	transition: all 0.3s;
 }
 
-@media screen and (max-width: 70rem) {
+.cb {
+	-webkit-transition: padding 0.3s, margin 0.3s;
+	-moz-transition: padding 0.3s, margin 0.3s;
+	-o-transition: padding 0.3s, margin 0.3s;
+	transition: padding 0.3s, margin 0.3s;
+}
+
+@media screen and (max-width: 75rem) {
 	body {
 		padding: 0 3rem;
 	}
@@ -76,7 +82,7 @@ body,
 	}
 }
 
-@media screen and (max-width: 45rem) {
+@media screen and (max-width: 50rem) {
 	body {
 		padding: 0;
 	}
