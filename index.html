@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 		<meta charset="utf-8">
 		<title>Goodnight</title>
@@ -19,20 +19,20 @@
 		<div class="subtitle">A super small library for applying custom CSS styles at night.</div>
 
 		<h2>Installation</h2>
-		<p>The easiest way to install is by using <a href="http://bower.io">bower</a>...</p>
+		<p>The easiest way to install is by using <a href="http://bower.io">bower</a>&hellip;</p>
 		<div class="cb">$ bower install goodnight</div>
-		<p>... or you could download it and reference it in your HTML like so...</p>
-		<div class="cb">&lt;script src="scripts/goodnight.min.js"&gt;&lt;/script&gt;</div>
+		<p>&hellip;or you could download it and reference it in your HTML like so&hellip;</p>
+		<div class="cb">&lt;script src="scripts/goodnight.min.js">&lt;/script></div>
 		<p>Remember to put and use Goodnight in the head of your document, to avoid a flash of unstyled content for the night version.</p>
 
 		<h2>Usage</h2>
-		<p>The following is the most basic example of using Goodnight with Javascript.</p>
+		<p>The following is the most basic example of using Goodnight with JavaScript: </p>
 		<div class="cb">Goodnight.css('styles/dark.css');</div>
-		<p>This makes Goodnight search for dark.css in the styles directory and apply that from 6PM to 6AM. To set your own Goodnight times, use the Goodnight.AM and Goodnight.PM properties:</p>
+		<p>This makes Goodnight search for dark.css in the styles directory and apply that from 6PM to 6AM. To set your own Goodnight times, use the Goodnight.AM and Goodnight.PM properties: </p>
 		<div class="cb">Goodnight.AM = 5; // 5AM<br>Goodnight.PM = 20; // 8PM</div>
-		<p>You can easily toggle light and dark styles using the Goodnight.toggle method:</p>
+		<p>You can easily toggle light and dark styles using the Goodnight.toggle method: </p>
 		<div class="cb">Goodnight.css('path/to/dark.css');<br>document.querySelector('#some-button').addEventListener('click', function () {<br>&nbsp;&nbsp;&nbsp;&nbsp;Goodnight.toggle(); // This removes styles from document.head<br>}, false);</div>
-		<p>Lastly, you can append a Goodnight appends the class "goodnight" to your body when it is night time, but you can change the class name of this to anything you want like this:</p>
+		<p>Lastly, you can append a Goodnight appends the class "goodnight" to your body when it is night time, but you can change the class name of this to anything you want like this: </p>
 		<div class="cb">Goodnight.class('my-night-class');</div>
 
 		<h2>License</h2>
