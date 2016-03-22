@@ -15,18 +15,6 @@ body {
 	font-size: 4rem;
 }
 
-.header-icon {
-    position: relative;
-}
-
-.header-icon:before {
-    content: "\25AE";
-    font-family: FontAwesome;
-    left: -5px;
-    position: absolute;
-    top :0;
-}
-
 h1, h2 {
 	font-family: Raleway;
 	font-weight: 700;
@@ -35,6 +23,7 @@ h1, h2 {
 
 h1 {
 	font-size: 3rem;
+	text-transform: uppercase;
 }
 
 .subtitle {
