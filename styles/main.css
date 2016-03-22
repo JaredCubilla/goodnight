@@ -1,5 +1,5 @@
 body {
-	background-color: #ecf0f1;
+	background-color: #d5e5e6;
 	margin: 0;
 	padding: 0 15rem;
 	font-family: "Open Sans", sans-serif;
@@ -12,7 +12,19 @@ body {
 
 .header {
 	padding-top: 5%;
-	font-size: 60px;
+	font-size: 4rem;
+}
+
+.header-icon {
+    position: relative;
+}
+
+.header-icon:before {
+    content: "\25AE";
+    font-family: FontAwesome;
+    left: -5px;
+    position: absolute;
+    top :0;
 }
 
 h1, h2 {
@@ -39,11 +51,15 @@ h2 {
 }
 
 .cb {
-	background-color: #95a5a6;
+	background-color: #b5c5c6;
 	padding: 1rem 16rem;
 	margin: 0 -15rem;
 	font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
 	font-size: 0.9rem;
+	-webkit-transition: padding 0.3s, margin 0.3s;
+	-moz-transition: padding 0.3s, margin 0.3s;
+	-o-transition: padding 0.3s, margin 0.3s;
+	transition: padding 0.3s, margin 0.3s;
 }
 
 a {
@@ -63,13 +79,6 @@ body {
 	-moz-transition: all 0.3s;
 	-o-transition: all 0.3s;
 	transition: all 0.3s;
-}
-
-.cb {
-	-webkit-transition: padding 0.3s, margin 0.3s;
-	-moz-transition: padding 0.3s, margin 0.3s;
-	-o-transition: padding 0.3s, margin 0.3s;
-	transition: padding 0.3s, margin 0.3s;
 }
 
 @media screen and (max-width: 75rem) {

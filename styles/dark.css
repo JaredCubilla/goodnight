@@ -3,5 +3,8 @@ body {
 	color: #fff;
 }
 .cb {
-	background-color: #000;
+	background-color: #1c2e40;
+}
+.icon-sun:before {
+	content: "\e800";
 }
