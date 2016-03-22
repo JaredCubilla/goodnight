@@ -42,7 +42,7 @@ h2 {
 	background-color: #b5c5c6;
 	padding: 1rem 16rem;
 	margin: 0 -15rem;
-	font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+	font-family: "Roboto Mono", Consolas, "Liberation Mono", Menlo, Courier, monospace;
 	font-size: 0.9rem;
 	-webkit-transition: padding 0.3s, margin 0.3s;
 	-moz-transition: padding 0.3s, margin 0.3s;
