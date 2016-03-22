@@ -1,44 +1,43 @@
 body {
 	background-color: #d5e5e6;
 	margin: 0;
-	padding: 0 15rem;
+	padding: 3rem 15rem;
 	font-family: "Open Sans", sans-serif;
 	font-weight: 300;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
 }
-
-.header, h1, h2 {
+.header,
+h1,
+h2 {
 	text-align: center;
 }
-
 .header {
-	margin-top: 5%;
 	font-size: 4rem;
 }
-
-h1, h2 {
+h1,
+h2 {
 	font-family: Raleway;
 	font-weight: 700;
 	margin: 0;
 }
-
 h1 {
 	font-size: 3rem;
 	text-transform: uppercase;
 }
-
 .subtitle {
 	font-size: 1rem;
 	text-align: center;
 	padding-left: 0.5rem;
 	padding-right: 0.5rem;
 }
-
 h2 {
 	margin-top: 3rem;
 	margin-bottom: 1.25rem;
 	font-size: 2rem;
 }
-
 .cb {
 	background-color: #b5c5c6;
 	padding: 1rem 16rem;
@@ -50,26 +49,12 @@ h2 {
 	-o-transition: padding 0.3s, margin 0.3s;
 	transition: padding 0.3s, margin 0.3s;
 }
-
 a {
 	color: inherit;
 }
-
 p {
 	padding: 1rem;
 }
-
-.end {
-	margin-bottom: 3rem;
-}
-
-body {
-	-webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
-	-o-transition: all 0.3s;
-	transition: all 0.3s;
-}
-
 @media screen and (max-width: 75rem) {
 	body {
 		padding: 0 3rem;
@@ -79,7 +64,6 @@ body {
 		margin: 0 -3rem;
 	}
 }
-
 @media screen and (max-width: 50rem) {
 	body {
 		padding: 0;
