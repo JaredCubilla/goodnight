@@ -11,32 +11,35 @@
 		<script src="scripts/controller.js"></script>
 	</head>
 	<body>
-		<div class="header"><i class="icon-moon"></i></div>
-		<h1>Goodnight</h1>
-		<div class="subtitle">A super small library for applying custom CSS styles at night.</div>
+		<div class="header"><i class="icon-moon"></i>
+			<h1>Goodnight</h1>
+			<div class="subtitle">A super small library for applying custom CSS styles at night.</div>
+		</div>
 
-		<h2>Installation</h2>
-		<p>The easiest way to install is by using <a href="http://bower.io">Bower</a>&hellip;</p>
-		<pre><code>$ bower install goodnight</code></pre>
-		<p>&hellip;or you could <a href="https://www.github.com/JaredCubilla/goodnight">download</a> it and refer to it in your HTML like so: </p>
-		<pre><code>&lt;script src="scripts/goodnight.min.js">&lt;/script></pre></code>
-		<p>Remember to put and use Goodnight in the head of your document to avoid a flash of unstyled content for the night version.</p>
+		<div class="content">
+			<h2>Installation</h2>
+			<p>The easiest way to install is by using <a href="http://bower.io">Bower</a>&hellip;</p>
+			<pre><code>$ bower install goodnight</code></pre>
+			<p>&hellip;or you could <a href="https://www.github.com/JaredCubilla/goodnight">download</a> it and refer to it in your HTML like so: </p>
+			<pre><code>&lt;script src="/path/to/goodnight.min.js">&lt;/script></pre></code>
+			<p>Remember to put and use Goodnight in the head of your document to avoid a flash of unstyled content for the night version.</p>
 
-		<h2>Usage</h2>
-		<p>The following is the most basic example of using Goodnight with JavaScript: </p>
-		<pre><code>Goodnight.css('styles/dark.css');</pre></code>
-		<p>This makes Goodnight search for dark.css in the styles directory and apply that from 6PM to 6AM. To set your own Goodnight times, use the Goodnight.AM and Goodnight.PM properties: </p>
-		<pre><code>Goodnight.AM = 5; // 5AM<br>Goodnight.PM = 20; // 8PM</pre></code>
-		<p>You can easily toggle light and dark styles using the Goodnight.toggle method: </p>
-		<pre><code>Goodnight.css('path/to/dark.css');
+			<h2>Usage</h2>
+			<p>The following is the most basic example of using Goodnight with JavaScript: </p>
+			<pre><code>Goodnight.css('/path/to/dark.css');</pre></code>
+			<p>This makes Goodnight search for dark.css in the styles directory and apply that from 6PM to 6AM. To set your own Goodnight times, use the Goodnight.AM and Goodnight.PM properties: </p>
+			<pre><code>Goodnight.AM = 5; // 5AM<br>Goodnight.PM = 20; // 8PM</pre></code>
+			<p>You can easily toggle light and dark styles using the Goodnight.toggle method: </p>
+			<pre><code>Goodnight.css('/path/to/dark.css');
 document.querySelector('#some-button').addEventListener('click', function () {
 	Goodnight.toggle(); // This removes styles from document.head
 }, false);</pre></code>
-		<p>Lastly, you can append a class to the body when it is nighttime like this: </p>
-		<pre><code>Goodnight.class('my-night-class');</pre></code>
-		<p>Leaving out a class name will make it default to "goodnight".</p>
+			<p>Lastly, you can append a class to the body when it is nighttime like this: </p>
+			<pre><code>Goodnight.class('my-night-class');</pre></code>
+			<p>Leaving out a class name will make it default to "goodnight".</p>
 
-		<h2>License</h2>
-		<p>Licensed under MIT. Created by <a href="https://www.github.com/JaredCubilla">Jared Cubilla</a>.</p>
+			<h2>License</h2>
+			<p>Licensed under MIT. Created by <a href="https://www.github.com/JaredCubilla">Jared Cubilla</a>.</p>
+		</div>
 	</body>
 </html>
