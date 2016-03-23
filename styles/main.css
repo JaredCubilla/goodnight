@@ -49,6 +49,7 @@ pre code {
 	-moz-transition: padding 0.3s, margin 0.3s;
 	-o-transition: padding 0.3s, margin 0.3s;
 	transition: padding 0.3s, margin 0.3s;
+	overflow: auto;
 }
 a {
 	color: inherit;
