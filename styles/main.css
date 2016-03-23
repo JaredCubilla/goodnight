@@ -58,18 +58,18 @@ p {
 }
 @media screen and (max-width: 75rem) {
 	body {
-		padding: 0 3rem;
+		padding: 3rem;
 	}
-	.cb {
+	pre code {
 		padding: 1rem 4rem;
 		margin: 0 -3rem;
 	}
 }
 @media screen and (max-width: 50rem) {
 	body {
-		padding: 0;
+		padding: 3rem 0;
 	}
-	.cb {
+	pre code {
 		padding: 1rem;
 		margin: 0;
 	}
