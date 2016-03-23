@@ -1,9 +1,10 @@
 body {
 	background-color: #d5e5e6;
-	margin: 0;
-	padding: 3rem 15rem;
+	min-height: 100%;
 	font-family: "Open Sans", sans-serif;
 	font-weight: 300;
+	margin: 0;
+	padding: 3rem 15rem;
 	-webkit-transition: color 0.3s, background-color 0.3s, margin 0.3s, padding 0.3s;
 	-moz-transition: color 0.3s, background-color 0.3s, margin 0.3s, padding 0.3s;
 	-o-transition: color 0.3s, background-color 0.3s, margin 0.3s, padding 0.3s;
@@ -38,13 +39,18 @@ h2 {
 	margin-bottom: 1.25rem;
 	font-size: 2rem;
 }
+code {
+	font-family: "Roboto Mono", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+	font-size: 0.8rem;
+	background-color: #b5c5c6;
+	padding: 0.1rem;
+	border-radius: 0.25rem;
+}
 pre code {
 	display: block;
-	background-color: #b5c5c6;
+	font-size: 0.7rem;
 	padding: 1rem 16rem;
 	margin: 0 -15rem;
-	font-family: "Roboto Mono", Consolas, "Liberation Mono", Menlo, Courier, monospace;
-	font-size: 0.75rem;
 	overflow: auto;
 	-webkit-transition: background-color 0.3s, margin 0.3s, padding 0.3s;
 	-moz-transition: background-color 0.3s, margin 0.3s, padding 0.3s;
@@ -59,11 +65,11 @@ p {
 }
 @media screen and (max-width: 75rem) {
 	body {
-		padding: 3rem;
+		padding: 3rem 5rem;
 	}
 	pre code {
-		padding: 1rem 4rem;
-		margin: 0 -3rem;
+		padding: 1rem 6rem;
+		margin: 0 -5rem;
 	}
 }
 @media screen and (max-width: 50rem) {

@@ -30,15 +30,20 @@
 			<h2>Usage</h2>
 			<p>The following is the most basic example of using Goodnight with JavaScript: </p>
 			<pre><code>Goodnight.css('styles/dark.css');</pre></code>
-			<p>This makes Goodnight search for dark.css in the styles directory and apply that from 6PM to 6AM. To set your own Goodnight times, use the Goodnight.AM and Goodnight.PM properties: </p>
+			<p>If you wanted to add more than one stylesheets, just use the <code>css()</code> method on each one.</p>
+			<pre><code>Goodnight.css('styles/dark-layout.css');
+Goodnight.css('styles/dark-colours.css');</pre></code>
+			<p>This makes Goodnight search for dark.css in the styles directory and apply that from 6PM to 6AM. To set your own Goodnight times, use the <code>AM</code> and <code>PM</code> properties: </p>
 			<pre><code>Goodnight.AM = 5; // 5AM<br>Goodnight.PM = 20; // 8PM</pre></code>
-			<p>You can easily toggle light and dark styles using the Goodnight.toggle method: </p>
+			<p>You can easily toggle light and dark styles using the <code>toggle()</code> method: </p>
 			<pre><code>Goodnight.css('/path/to/dark.css');
 document.querySelector('#some-button').addEventListener('click', function () {
 	Goodnight.toggle(); // This removes styles from document.head
 }, false);</pre></code>
 			<p>Lastly, you can append a class to the body when it is nighttime like this: </p>
 			<pre><code>Goodnight.class('my-night-class');</pre></code>
+			<p>Adding multiple classes is possible as long as you seperate them using spaces.</p>
+			<pre><code>Goodnight.class('my-first-night-class my-second-night-class');</pre></code>
 			<p>Leaving out a class name will make it default to "goodnight".</p>
 
 			<h2>License</h2>
