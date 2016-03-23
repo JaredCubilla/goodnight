@@ -43,7 +43,7 @@ code {
 	font-family: "Roboto Mono", Consolas, "Liberation Mono", Menlo, Courier, monospace;
 	font-size: 0.8rem;
 	background-color: #b5c5c6;
-	padding: 0.1rem;
+	padding: 0.25rem;
 	border-radius: 0.25rem;
 }
 pre code {
@@ -56,6 +56,7 @@ pre code {
 	-moz-transition: background-color 0.3s, margin 0.3s, padding 0.3s;
 	-o-transition: background-color 0.3s, margin 0.3s, padding 0.3s;
 	transition: background-color 0.3s, margin 0.3s, padding 0.3s;
+	border-radius: 0;
 }
 a {
 	color: inherit;
