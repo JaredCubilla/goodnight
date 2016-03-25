@@ -3,6 +3,7 @@ body {
 	min-height: 100%;
 	font-family: "Open Sans", sans-serif;
 	font-weight: 300;
+	line-height: 1.5;
 	margin: 0;
 	padding: 3rem 15rem;
 	-webkit-transition: color 0.3s, background-color 0.3s, margin 0.3s, padding 0.3s;
@@ -45,6 +46,10 @@ code {
 	background-color: #b5c5c6;
 	padding: 0.25rem;
 	border-radius: 0.25rem;
+	-webkit-transition: background-color 0.3s, margin 0.3s, padding 0.3s;
+	-moz-transition: background-color 0.3s, margin 0.3s, padding 0.3s;
+	-o-transition: background-color 0.3s, margin 0.3s, padding 0.3s;
+	transition: background-color 0.3s, margin 0.3s, padding 0.3s;
 }
 pre code {
 	display: block;
@@ -52,10 +57,6 @@ pre code {
 	padding: 1rem 16rem;
 	margin: 0 -15rem;
 	overflow: auto;
-	-webkit-transition: background-color 0.3s, margin 0.3s, padding 0.3s;
-	-moz-transition: background-color 0.3s, margin 0.3s, padding 0.3s;
-	-o-transition: background-color 0.3s, margin 0.3s, padding 0.3s;
-	transition: background-color 0.3s, margin 0.3s, padding 0.3s;
 	border-radius: 0;
 }
 a {
