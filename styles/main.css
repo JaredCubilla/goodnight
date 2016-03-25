@@ -71,7 +71,7 @@ p {
 	}
 	pre code {
 		padding: 1rem 16rem;
-		margin: 0 -5rem;
+		margin: 0 -15rem;
 	}
 }
 @media screen and (max-width: 75rem) {
