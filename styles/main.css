@@ -65,6 +65,15 @@ a {
 p {
 	padding: 1rem;
 }
+@media screen and (min-width: 95rem) {
+	body {
+		padding: 3rem 15rem;
+	}
+	pre code {
+		padding: 1rem 16rem;
+		margin: 0 -5rem;
+	}
+}
 @media screen and (max-width: 75rem) {
 	body {
 		padding: 3rem 5rem;
