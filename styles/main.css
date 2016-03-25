@@ -67,11 +67,11 @@ p {
 }
 @media screen and (min-width: 95rem) {
 	body {
-		padding: 3rem 15rem;
+		padding: 3rem 25rem;
 	}
 	pre code {
-		padding: 1rem 16rem;
-		margin: 0 -15rem;
+		padding: 1rem 26rem;
+		margin: 0 -25rem;
 	}
 }
 @media screen and (max-width: 75rem) {
