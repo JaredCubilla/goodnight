@@ -1,59 +1,94 @@
 body {
-	background-color: #ecf0f1;
-	margin: 0;
-	padding: 0;
-	font-family: "Open Sans";
+	background-color: #d5e5e6;
+	min-height: 100%;
+	font-family: "Open Sans", sans-serif;
 	font-weight: 300;
+	line-height: 1.5;
+	margin: 0;
+	padding: 3rem 15rem;
+	-webkit-transition: color 0.3s, background-color 0.3s, margin 0.3s, padding 0.3s;
+	-moz-transition: color 0.3s, background-color 0.3s, margin 0.3s, padding 0.3s;
+	-o-transition: color 0.3s, background-color 0.3s, margin 0.3s, padding 0.3s;
+	transition: color 0.3s, background-color 0.3s, margin 0.3s, padding 0.3s;
 }
-
-.header, h1, h2 {
+.header,
+h1,
+h2 {
 	text-align: center;
 }
-
 .header {
-	padding-top: 5%;
-	font-size: 60px;
+	font-size: 4rem;
 }
-
-h1, h2 {
+h1,
+h2 {
 	font-family: Raleway;
 	font-weight: 700;
-	margin:0;
+	margin: 0;
 }
-
 h1 {
-	font-size: 50px;
+	font-size: 3rem;
+	text-transform: uppercase;
 }
-
 .subtitle {
-	font-size: 15px;
+	font-size: 1rem;
 	text-align: center;
-	padding-left: 7px;
-	padding-right: 7px;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
 }
-
 h2 {
-	margin-top: 50px;
-	margin-bottom: 20px;
-	font-size: 30px;
+	margin-top: 3rem;
+	margin-bottom: 1.25rem;
+	font-size: 2rem;
 }
-
-.cb {
-	background-color: #95a5a6;
-	padding: 15px;
-	font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
-	font-size: 13px;
+code {
+	font-family: "Roboto Mono", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+	font-size: 0.8rem;
+	background-color: #b5c5c6;
+	padding: 0.25rem;
+	border-radius: 0.25rem;
+	-webkit-transition: background-color 0.3s, margin 0.3s, padding 0.3s;
+	-moz-transition: background-color 0.3s, margin 0.3s, padding 0.3s;
+	-o-transition: background-color 0.3s, margin 0.3s, padding 0.3s;
+	transition: background-color 0.3s, margin 0.3s, padding 0.3s;
 }
-
+pre code {
+	display: block;
+	font-size: 0.7rem;
+	padding: 1rem 16rem;
+	margin: 0 -15rem;
+	overflow: auto;
+	border-radius: 0;
+}
 a {
 	color: inherit;
 }
-
 p {
-	padding: 15px;
-	padding-bottom: 5px;
+	padding: 1rem;
 }
-
-.end {
-	margin-bottom: 50px;
+@media screen and (min-width: 95rem) {
+	body {
+		padding: 3rem 25rem;
+	}
+	pre code {
+		padding: 1rem 26rem;
+		margin: 0 -25rem;
+	}
+}
+@media screen and (max-width: 75rem) {
+	body {
+		padding: 3rem 5rem;
+	}
+	pre code {
+		padding: 1rem 6rem;
+		margin: 0 -5rem;
+	}
+}
+@media screen and (max-width: 50rem) {
+	body {
+		padding: 3rem 0;
+	}
+	pre code {
+		padding: 1rem;
+		margin: 0;
+	}
 }
